@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/houtai.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="head">
+      <div class="top">
+       <h1 class="logo"><a href=""><img src="../images/logo.png"></a></h1>
+       <ul class="nav-top" id="nav-top">
+          <li><a href="../index.html">音乐馆</a></li>
+          <li><a href="mymusic.html">我的音乐</a></li>
+          <li><a href="">下载客户端</a></li>
+          <li><a href="">VIP</a></li></ul>
+      </div>
+
+      <div class="searchs"><input  type="search" class="search" placeholder="梦想的声音" ><a href=""><i class="icon-search"></i></a></input></div>
+      <div class="login"><a class="button"  href="" class="login">登录</a>
+                         <a class="button1" href="">开通绿砖豪华版</a>
+                         <a class="button2" href="">开通付费包</a></div>
+      <div class="nav-down">
+        <ul><li><a href="">首页</a></li>
+            <li><a href="singer.html">歌手</a></li>
+            <li><a href="">专辑</a></li>
+            <li><a href="">排行榜</a></li>
+            <li><a href="">歌单广场</a></li>
+            <li><a href="">MV</a></li></ul></div>
+    </div>
+
+    <div class="mod">
+        <div id="info"></div>
+      <div class="mod_up"><img src="../images/tx.jpg" class="mod_tx">
+        <div class="mod_middle">
+          <span>阳光</span>
+          <a href=""><img src="../images/svip_g@2x.png" class="lv_icon"></a><a href=""><img src="../images/sui_g@2x.png" class="lv_icon"></a></div>
+        <div class="mod_down">
+          <ul><li class="mod-down"><a href=""><strong>3</strong><br><span>关注</span><a></li>
+              <li><a href=""><strong>0</strong><br><span>粉丝</span><a></li></div>
+      </div>
+    </div>
+    <div class="media"><a href="houtai.html" >歌曲</a>
+                  <button type="button" onclick="loadXMLDoc()" value="MV" class="button">MV</button></div>
+  <script type="text/javascript">
+    /*  function loadXMLDoc()
+      {
+      var xmlhttp;
+      if (window.XMLHttpRequest)
+      {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+        }
+      else
+      {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function()
+      {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      {
+        document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+        xmlhttp.open("GET","music.html",true);
+        xmlhttp.send();
+        }
+        </script>
+
+      <div id="myDiv">
+        <audio src="Julyl.mp3" controls=""></audio>
+        <audio src="Julyl.mp3" controls=""></audio>
+        <audio src="Julyl.mp3" controls=""></audio>
+        <audio src="Julyl.mp3" controls=""></audio>
+        <audio src="Julyl.mp3" controls=""></audio>
+        <audio src="Julyl.mp3" controls=""></audio>
+
+        </div>
+<script>
+/*window.onload= function(){
+  function startTime() {
+    var data= new Date();
+    var year= data.getFullYear();
+    var month= data.getMonth()+1;
+    var date= data.getDate();
+    var day= data.getDay();
+    var hour= data.getHours();
+    var minute= data.getMinutes();
+    var second= data.getSeconds();
+    second=change(second);
+    var arry=["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+    var info=document.getElementById("info");
+    info.innerHTML=year+"年"+month+"月"+date+"日"+ arry[day]+hour+":"+minute+":"+second;
+    setTimeout(startTime,500);
+  }
+  setTimeout(startTime,500);
+
+}
+function change(i){
+  if(i<10) {
+    i="0"+i;
+  }
+  return i;
+}
+</script>
+
+
+
+  </body>
+</html>
