@@ -28,9 +28,7 @@ window.onload=function(){
       var date= data.getDate();
       var day= data.getDay();
       var hour= data.getHours();
-      hour=change(hour)
       var minute= data.getMinutes();
-      minute=change(minute);
       var second= data.getSeconds();
       second=change(second);
       var arry=["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
@@ -38,7 +36,7 @@ window.onload=function(){
       info.innerHTML=year+"年"+month+"月"+date+"日"+ arry[day]+hour+":"+minute+":"+second;
       setTimeout(startTime,500);
     }
-    setTimeout(startTime);
+    setTimeout(startTime,500);
 
   }
   function change(i){
